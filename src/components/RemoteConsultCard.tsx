@@ -70,8 +70,6 @@ const StyledRemoteCard = styled.section`
         }
       }
     }
-    .chatImage {
-    }
   }
   .infos {
     margin-top: 0.9rem;
@@ -85,6 +83,9 @@ const StyledRemoteCard = styled.section`
     .buttons {
       display: flex;
       justify-content: space-around;
+      Button:nth-child(1) {
+        border: none;
+      }
     }
   }
 `;

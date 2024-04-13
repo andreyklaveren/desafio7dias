@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import PerfilImg from "../assets/Perfil.jpeg";
 import ChatSvg from "../assets/chat.svg";
-import CameraSvg from "../assets/Camera.svg";
+import PinSvg from "../assets/pin.svg";
 import { Button } from "./Button";
 export function LocalConsultCard() {
   return (
@@ -12,8 +12,8 @@ export function LocalConsultCard() {
           <div className="patientInfo">
             <h2>Andrey Klaveren</h2>
             <div className="consultType">
-              <img src={CameraSvg} alt="" />
-              <p>Consulta remota</p>
+              <img src={PinSvg} alt="" />
+              <p>Consulta no local</p>
             </div>
           </div>
         </section>
@@ -25,9 +25,8 @@ export function LocalConsultCard() {
         <p>14:00 - 15:00 (1 hora)</p>
         <div className="buttons">
           <Button textColor="#FFF" bgColor="#FFB050">
-            Ligar por vídeo
+            Ver endereço
           </Button>
-          <Button>Ligar por áudio</Button>
         </div>
       </section>
     </StyledLocalCard>
@@ -85,6 +84,11 @@ const StyledLocalCard = styled.section`
     .buttons {
       display: flex;
       justify-content: space-around;
+      Button {
+        background-color: #4894ff;
+        width: 100%;
+        border: none;
+      }
     }
   }
 `;
